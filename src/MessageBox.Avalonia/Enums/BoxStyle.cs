@@ -1,6 +1,6 @@
 namespace MessageBox.Avalonia.Enums
 {
-    public enum Style
+    public enum BoxStyle
     {
         None,
         Windows,

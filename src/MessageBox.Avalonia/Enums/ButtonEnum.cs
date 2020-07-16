@@ -1,17 +1,18 @@
+using System;
+
 namespace MessageBox.Avalonia.Enums
 {
-    public enum ButtonEnum
+    [Flags]
+    public enum ButtonEnum : int
     {
-        Ok,
+        Ok = 1,
 
-        YesNo,
+        Yes = 2,
 
-        OkCancel,
+        No = 4,
 
-        OkAbort,
+        Cancel = 8,
 
-        YesNoCancel,
-
-        YesNoAbort
+        Abort = 16
     }
 }

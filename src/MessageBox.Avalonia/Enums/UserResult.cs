@@ -3,7 +3,7 @@ using System;
 namespace MessageBox.Avalonia.Enums
 {
     [Flags]
-    public enum ButtonResult
+    public enum UserResult
     {
         Ok,
         Yes,
