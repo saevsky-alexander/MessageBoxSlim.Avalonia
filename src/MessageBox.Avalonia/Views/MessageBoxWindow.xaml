@@ -3,7 +3,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="150" d:DesignHeight="100"
-        x:Class="MessageBox.Avalonia.Views.MessageBoxWindow"
+        x:Class="MessageBoxSlim.Avalonia.Views.MessageBoxWindow"
         SizeToContent="WidthAndHeight"
         MinWidth="200"
         MaxWidth="{Binding MaxWidth}"
@@ -47,12 +47,12 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <!--Icon-->
-        <Image Grid.Row="0" Grid.Column="0" Margin="4" MaxHeight="50" MaxWidth="50" VerticalAlignment="Center"
+        <Image Grid.Row="0" Grid.Column="0" Margin="8" MaxHeight="50" MaxWidth="50" VerticalAlignment="Center"
                IsVisible="{Binding HasIcon}"
                Source="{Binding Icon}" />
-        <TextBox  Grid.Row="0" VerticalAlignment="Center" Margin="4" Grid.Column="1" Text="{Binding Message}" />
+        <TextBox  Grid.Row="0" VerticalAlignment="Center" Margin="4,16,8,16" Grid.Column="1" Text="{Binding Message}" />
         <!--Buttons-->
-        <StackPanel Orientation="Horizontal" Margin="4" Grid.Row="1" Grid.ColumnSpan="2"
+        <StackPanel Orientation="Horizontal"  Margin="4,16,8,16" Grid.Row="1" Grid.ColumnSpan="2"
                     HorizontalAlignment="Right" VerticalAlignment="Center">
             <Button Content="Ok" Command="{Binding ButtonClick}"
                     CommandParameter="{Binding $self.Content}" IsVisible="{Binding OkButton}" />

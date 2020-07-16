@@ -1,9 +1,9 @@
 using Avalonia.Controls;
 using Avalonia.Media.Imaging;
-using MessageBox.Avalonia.Enums;
-using MessageBox.Avalonia.Views;
+using MessageBoxSlim.Avalonia.Enums;
+using MessageBoxSlim.Avalonia.Views;
 
-namespace MessageBox.Avalonia.DTO
+namespace MessageBoxSlim.Avalonia.DTO
 {
     public class MessageBoxParams
     {

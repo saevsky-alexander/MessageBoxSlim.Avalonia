@@ -1,11 +1,11 @@
 using System.Threading.Tasks;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
-using MessageBox.Avalonia.Enums;
-using MessageBox.Avalonia.Extensions;
-using MessageBox.Avalonia.Interfaces;
+using MessageBoxSlim.Avalonia.Enums;
+using MessageBoxSlim.Avalonia.Extensions;
+using MessageBoxSlim.Avalonia.Interfaces;
 
-namespace MessageBox.Avalonia.Views
+namespace MessageBoxSlim.Avalonia.Views
 {
     public class MessageBoxWindow : Window, IMessageBox<UserResult>
     {

@@ -1,4 +1,4 @@
-namespace MessageBox.Avalonia.Enums
+namespace MessageBoxSlim.Avalonia.Enums
 {
     public enum BoxStyle
     {

@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29806.167
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageBox.Avalonia", "src\MessageBox.Avalonia\MessageBox.Avalonia.csproj", "{C9CB33EA-26AC-4839-A754-E5B4F207B8BF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageBoxSlim.Avalonia", "src\MessageBox.Avalonia\MessageBoxSlim.Avalonia.csproj", "{C9CB33EA-26AC-4839-A754-E5B4F207B8BF}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MessageBox.Avalonia.Example", "src\MessageBox.Avalonia.Example\MessageBox.Avalonia.Example.csproj", "{7E6304F1-5CFD-49BD-9FB3-108CC542F00F}"
 EndProject

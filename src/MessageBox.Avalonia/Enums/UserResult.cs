@@ -1,6 +1,6 @@
 using System;
 
-namespace MessageBox.Avalonia.Enums
+namespace MessageBoxSlim.Avalonia.Enums
 {
     [Flags]
     public enum UserResult

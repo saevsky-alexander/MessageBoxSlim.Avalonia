@@ -1,73 +1,43 @@
-# MessageBox.Avalonia
+# MessageBoxSlim.Avalonia
 
-Messagebox for AvaloniaUI
-for 0.9
+A smaller more focused Version of  [MessageBox.Avalonia](https://github.com/CreateLab/MessageBox.Avalonia)
 
+My goal was to build a cross-platform message box that doesn't try to be super fancy and also to remove a lot of unneeded complexity. This fork tries to create a more platform to platform default experience instand of extra features.
 
-![](Images/Capture.PNG)
+![](README.assets/Capture.PNG)
 
+The major differences are:
 
-To start you should install MessageBox.Avalonia Nuget package 
->   dotnet add package MessageBox.Avalonia 
+-   Only one MessageBox Type. The removal of the custom message box is opionated but if you want custom buttons back that should be easy to add to the new class if you need it.
+-   No prebaked Icons included. You can still use those from the Example but now the API expects that you have your own Icons
+-   Code simplification, identifier are shorter and no longer clash with bultins
+    -   Examples
+        -   Show and ShowDialog are renamed to ShowAsync and ShowDialogAsync
+        -   Style is now Called BoxStyle
+-   A can only be constructed with the DTO Object
+    -   I did this to keep things simple for now
+-   The Button Parameter is now a bitfield. You can now combine every button combination you want. See the Example Project for Code Snippets.
+-   Improved and simplified XAML Layout
+-   Removed Header Property (Use Title instead)
+-   Removed the colorful Buttons
+-   A MessageBox will now by default be shown in the center of its owner
+-   BitmapFactory for easy Bitmap loading from Code
 
-[![nuget](https://img.shields.io/badge/nuget-9-lightblue)](https://www.nuget.org/packages/MessageBox.Avalonia/0.9.0)
-or download this repo.
+I also expanded the Example Project to show the new API and different Styles.
 
-[![wiki](https://img.shields.io/badge/wiki-v%200.9-brightgreen)](https://github.com/CreateLab/MessageBox.Avalonia/wiki) - here you can find all Api.
+At the moment this is not yet on NuGet! It depends on how useful those changes are for other people.
 
+## Example Usage
 
-
-The easiest way is:
-
-![](Images/baseWind.png)
-
-```cs 
-var messageBoxStandardWindow = MessageBox.Avalonia.MessageBoxManager.GetMessageBoxStandardWindow("title","orem ipsum dolor sit amet, consectetur adipiscing elit, sed...");
-messageBoxStandardWindow.Show();
+```csharp
+var result = await BoxedMessage.Create(new MessageBoxParams
+{
+	Buttons = ButtonEnum.Ok | ButtonEnum.Abort,
+	ContentTitle = "Oh no",
+	ContentMessage = "Oh no! Something went wrong :(",
+	Location = WindowStartupLocation.CenterScreen,
+	Icon = BitmapFactory.Load("avares://MessageBox.Avalonia.Example/Assets/plus.ico"),
+	Style = BoxStyle.UbuntuLinux
+}).ShowDialogAsync(this);
 ```
 
-or this with defautlt buttons from enum:
-
-![](Images/Base2.png)
-
-```cs
-            var msBoxStandardWindow = MessageBox.Avalonia.MessageBoxManager.GetMessageBoxStandardWindow(new MessageBoxStandardParams{
-                ButtonDefinitions = ButtonEnum.OkAbort,
-                ContentTitle = "Title",
-                ContentMessage = "Message",
-                Icon = Icon.Plus,
-                Style = Style.UbuntuLinux
-            });
-            msBoxStandardWindow.Show();
-```
-
-or like this, with custom buttons:
-
-![](Images/Custom.png)
-
-```cs
-            var messageBoxCustomWindow = MessageBox.Avalonia.MessageBoxManager.GetMessageBoxCustomWindow(new MessageBoxCustomParams {
-                Style = Style.UbuntuLinux,
-                ContentMessage = "Message",
-                ButtonDefinitions = new []{new ButtonDefinition{Name = "My"},new ButtonDefinition{Name = "Buttons",Type = ButtonType.Colored} }
-            });
-            messageBoxCustomWindow.Show();
-```
-**Powered by**
-
-
-
-
-<a href="https://www.jetbrains.com/?from=ABC">
-<img width="400" alt="portfolio_view" src="https://github.com/CreateLab/MessageBox.Avalonia/blob/master/Images/jetbrains-variant-4.png" />
-</a>
-
-**Usages:**
-
-[Lacmus](https://github.com/lizaalert/lacmus)
-
-[SQRLDotNetClient](https://github.com/sqrldev/SQRLDotNetClient)
-
-[OpenTabletDriver](https://github.com/InfinityGhost/OpenTabletDriver/tree/c4d823a11824abec3fb0f6d4f7182610aba5c9d8)
-
-[Comquiz](https://github.com/VFansss/comquiz)

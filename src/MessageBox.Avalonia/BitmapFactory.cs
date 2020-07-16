@@ -3,7 +3,7 @@ using Avalonia;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
 
-namespace MessageBox.Avalonia.Extensions
+namespace MessageBoxSlim.Avalonia
 {
     public static class BitmapFactory
     {

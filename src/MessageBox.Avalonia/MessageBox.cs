@@ -1,14 +1,14 @@
 
-using MessageBox.Avalonia.DTO;
-using MessageBox.Avalonia.Enums;
-using MessageBox.Avalonia.Interfaces;
-using MessageBox.Avalonia.ViewModels;
-using MessageBox.Avalonia.Views;
+using MessageBoxSlim.Avalonia.DTO;
+using MessageBoxSlim.Avalonia.Enums;
+using MessageBoxSlim.Avalonia.Interfaces;
+using MessageBoxSlim.Avalonia.ViewModels;
+using MessageBoxSlim.Avalonia.Views;
 
 
-namespace MessageBox.Avalonia
+namespace MessageBoxSlim.Avalonia
 {
-    public static class MessageBox
+    public static class BoxedMessage
     {
         public static IMessageBox<UserResult> Create(MessageBoxParams @params)
         {

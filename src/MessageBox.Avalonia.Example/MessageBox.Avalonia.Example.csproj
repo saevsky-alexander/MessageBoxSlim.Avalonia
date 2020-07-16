@@ -17,10 +17,10 @@
       </AvaloniaResource>
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Avalonia" Version="0.9.6" />
-    <PackageReference Include="Avalonia.Desktop" Version="0.9.6" />
+    <PackageReference Include="Avalonia" Version="0.9.11" />
+    <PackageReference Include="Avalonia.Desktop" Version="0.9.11" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\MessageBox.Avalonia\MessageBox.Avalonia.csproj" />
+    <ProjectReference Include="..\MessageBox.Avalonia\MessageBoxSlim.Avalonia.csproj" />
   </ItemGroup>
 </Project>

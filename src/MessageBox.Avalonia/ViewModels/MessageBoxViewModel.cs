@@ -3,15 +3,15 @@ using Avalonia.Controls;
 using Avalonia.Input.Platform;
 using Avalonia.Media.Imaging;
 
-using MessageBox.Avalonia.DTO;
-using MessageBox.Avalonia.Enums;
-using MessageBox.Avalonia.Extensions;
-using MessageBox.Avalonia.Views;
+using MessageBoxSlim.Avalonia.DTO;
+using MessageBoxSlim.Avalonia.Enums;
+using MessageBoxSlim.Avalonia.Extensions;
+using MessageBoxSlim.Avalonia.Views;
 
 using System;
 using System.Threading.Tasks;
 
-namespace MessageBox.Avalonia.ViewModels
+namespace MessageBoxSlim.Avalonia.ViewModels
 {
     public class MessageBoxViewModel : ViewModelBase
     {
@@ -25,7 +25,7 @@ namespace MessageBox.Avalonia.ViewModels
             }
             if (@params.Icon == null)
             {
-                @params.Icon = BitmapFactory.Load("avares://MessageBox.Avalonia/Assets/noicon.ico");
+                @params.Icon = BitmapFactory.Load("avares://MessageBoxSlim.Avalonia/Assets/noicon.ico");
             }
 
             _dtoParams = @params;

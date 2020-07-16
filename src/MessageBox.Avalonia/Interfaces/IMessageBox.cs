@@ -1,7 +1,7 @@
 using System.Threading.Tasks;
 using Avalonia.Controls;
 
-namespace MessageBox.Avalonia.Interfaces
+namespace MessageBoxSlim.Avalonia.Interfaces
 {
     public interface IMessageBox<T>
     {
