@@ -357,3 +357,6 @@ MigrationBackup/
 .idea/
 #Ignore special
 .directory
+/MessageBoxSlim.Avalonia.UserThemeExample/Assets/idea_64.png
+/MessageBoxSlim.Avalonia.UserThemeExample/Assets/idea_48.png
+/MessageBoxSlim.Avalonia.UserThemeExample/Assets/idea_32.png

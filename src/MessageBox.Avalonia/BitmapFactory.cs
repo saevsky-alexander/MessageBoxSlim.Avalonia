@@ -1,7 +1,8 @@
-using System;
 using Avalonia;
 using Avalonia.Media.Imaging;
 using Avalonia.Platform;
+
+using System;
 
 namespace MessageBoxSlim.Avalonia
 {

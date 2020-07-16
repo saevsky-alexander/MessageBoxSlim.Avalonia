@@ -2,7 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageVersion>0.9.7.0</PackageVersion>
+        <PackageVersion>0.9.8.0</PackageVersion>
         <Title>MessageBoxSlim.Avalonia</Title>
         <Authors>SirJson, Lary&lt;f98f96.gmail.com&gt;</Authors>
         <Description>A simpler MessageBox for AvaloniaUI</Description>
@@ -23,7 +23,7 @@
         <AssemblyName>MessageBoxSlim.Avalonia</AssemblyName>
         <Company>SirJson,SirJson, Lary&lt;f98f96.gmail.com&gt;</Company>
         <RepositoryType>git</RepositoryType>
-        <Version>0.9.7</Version>
+        <Version>0.9.8</Version>
     </PropertyGroup>
     <ItemGroup>
       <PackageReference Include="Avalonia" Version="0.9.11" />

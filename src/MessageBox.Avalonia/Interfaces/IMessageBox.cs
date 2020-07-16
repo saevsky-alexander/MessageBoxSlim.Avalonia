@@ -1,5 +1,6 @@
-using System.Threading.Tasks;
 using Avalonia.Controls;
+
+using System.Threading.Tasks;
 
 namespace MessageBoxSlim.Avalonia.Interfaces
 {

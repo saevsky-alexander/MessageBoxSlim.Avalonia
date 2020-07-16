@@ -1,7 +1,7 @@
 using Avalonia.Controls;
 using Avalonia.Media.Imaging;
+
 using MessageBoxSlim.Avalonia.Enums;
-using MessageBoxSlim.Avalonia.Views;
 
 namespace MessageBoxSlim.Avalonia.DTO
 {

@@ -1,5 +1,3 @@
-using System;
-
 namespace MessageBoxSlim.Avalonia
 {
     public enum UserResult

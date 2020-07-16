@@ -5,7 +5,6 @@ using Avalonia.Media.Imaging;
 
 using MessageBoxSlim.Avalonia.DTO;
 using MessageBoxSlim.Avalonia.Enums;
-using MessageBoxSlim.Avalonia.Extensions;
 using MessageBoxSlim.Avalonia.Views;
 
 using System;
@@ -19,7 +18,7 @@ namespace MessageBoxSlim.Avalonia.ViewModels
 
         public MessageBoxViewModel(MessageBoxParams @params, MessageBoxWindow wnd)
         {
-            if(wnd == null)
+            if (wnd == null)
             {
                 throw new ArgumentNullException(nameof(wnd));
             }

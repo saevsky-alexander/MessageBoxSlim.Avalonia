@@ -1,7 +1,9 @@
-using System;
 using Avalonia.Controls;
 using Avalonia.Markup.Xaml.Styling;
+
 using MessageBoxSlim.Avalonia.Enums;
+
+using System;
 
 namespace MessageBoxSlim.Avalonia.Extensions
 {
@@ -9,7 +11,7 @@ namespace MessageBoxSlim.Avalonia.Extensions
     {
         internal static void SetStyle(this Window window, BoxStyle style)
         {
-            var styles = window.Styles;
+            global::Avalonia.Styling.Styles styles = window.Styles;
             switch (style)
             {
                 case BoxStyle.Windows:

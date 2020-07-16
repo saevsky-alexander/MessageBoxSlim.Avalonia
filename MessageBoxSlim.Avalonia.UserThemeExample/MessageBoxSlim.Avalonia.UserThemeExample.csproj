@@ -4,10 +4,12 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <None Remove="Assets\battery.ico" />
+    <None Remove="Assets\idea.ico" />
+    <None Remove="Assets\idea.png" />
+    <None Remove="Assets\physics.png" />
   </ItemGroup>
   <ItemGroup>
-    <AvaloniaResource Include="Assets\battery.ico" />
+    <AvaloniaResource Include="Assets\idea.png" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Avalonia" Version="0.9.11" />

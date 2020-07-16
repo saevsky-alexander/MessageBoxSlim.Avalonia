@@ -1,9 +1,7 @@
-﻿using System;
-using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Interactivity;
 using Avalonia.Markup.Xaml;
-using Avalonia.Markup.Xaml.Styling;
+
 using MessageBoxSlim.Avalonia;
 using MessageBoxSlim.Avalonia.DTO;
 using MessageBoxSlim.Avalonia.Enums;
@@ -26,7 +24,8 @@ namespace MessageBox.Avalonia.Example
         private async void MainWindow_Click(object sender, RoutedEventArgs e)
         {
             await BoxedMessage
-                .Create(new MessageBoxParams {
+                .Create(new MessageBoxParams
+                {
                     Buttons =
                         ButtonEnum.Ok |
                         ButtonEnum.Cancel |
@@ -43,9 +42,10 @@ namespace MessageBox.Avalonia.Example
                 })
                 .ShowDialogAsync(this);
 
-            var result =
+            UserResult result =
                 await BoxedMessage
-                    .Create(new MessageBoxParams {
+                    .Create(new MessageBoxParams
+                    {
                         Buttons = ButtonEnum.Ok | ButtonEnum.Abort,
                         ContentTitle = "Oh no",
                         ContentMessage = "Oh no! Something went wrong :(",
@@ -58,7 +58,8 @@ namespace MessageBox.Avalonia.Example
                     .ShowDialogAsync(this);
 
             await BoxedMessage
-                .Create(new MessageBoxParams {
+                .Create(new MessageBoxParams
+                {
                     Buttons = ButtonEnum.Ok,
                     ContentTitle = "Your Answer",
                     ContentMessage = $"Your answer was: {result}",
@@ -71,7 +72,8 @@ namespace MessageBox.Avalonia.Example
                 .ShowDialogAsync(this);
 
             await BoxedMessage
-                .Create(new MessageBoxParams {
+                .Create(new MessageBoxParams
+                {
                     Buttons = ButtonEnum.Ok,
                     ContentTitle = "Your Answer",
                     ContentMessage = $"Your mac answer was: {result}",
@@ -83,9 +85,10 @@ namespace MessageBox.Avalonia.Example
                 })
                 .ShowDialogAsync(this);
 
-            var pizzaAnwser =
+            UserResult pizzaAnwser =
                 await BoxedMessage
-                    .Create(new MessageBoxParams {
+                    .Create(new MessageBoxParams
+                    {
                         Buttons = ButtonEnum.Yes | ButtonEnum.No,
                         ContentTitle = "Important question",
                         ContentMessage = "Do you like pineapple pizza?",
@@ -98,7 +101,8 @@ namespace MessageBox.Avalonia.Example
                     .ShowDialogAsync(this);
 
             await BoxedMessage
-                .Create(new MessageBoxParams {
+                .Create(new MessageBoxParams
+                {
                     Buttons = ButtonEnum.Yes | ButtonEnum.No,
                     ContentTitle = "Wtf",
                     ContentMessage =

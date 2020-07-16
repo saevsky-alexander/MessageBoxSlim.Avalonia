@@ -1,11 +1,8 @@
-﻿using Avalonia;
-using Avalonia.Controls;
+﻿using Avalonia.Controls;
 using Avalonia.Markup.Xaml;
 
 using MessageBoxSlim.Avalonia.DTO;
 using MessageBoxSlim.Avalonia.Enums;
-
-using System.Threading.Tasks;
 
 namespace MessageBoxSlim.Avalonia.UserThemeExample
 {
@@ -29,11 +26,11 @@ namespace MessageBoxSlim.Avalonia.UserThemeExample
          Buttons = ButtonEnum.Ok | ButtonEnum.No,
          ContentTitle = "Style overloading",
          ContentMessage =
-             "Did you know you can define your own MessageBox theme and overload the default ones? \n\nTo modify the message box style have a look at App.axaml and make sure to set the MessageBox Style to None to disable any embedded styling",
+             "Did you know you can define your own MessageBox theme and overload the default ones? \n\nTo modify the message box style have a look at App.axaml and\nmake sure to set the 'MessageBox Style' to 'None' to disable any embedded styling",
          Location = WindowStartupLocation.CenterOwner,
          Icon =
              BitmapFactory
-                 .Load("avares://MessageBoxSlim.Avalonia.UserThemeExample/Assets/battery.ico"),
+                 .Load("avares://MessageBoxSlim.Avalonia.UserThemeExample/Assets/idea.png"),
          Style = BoxStyle.None
      })
      .ShowDialogAsync(this);
