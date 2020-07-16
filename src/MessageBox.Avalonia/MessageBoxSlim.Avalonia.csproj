@@ -2,8 +2,8 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageVersion>0.9.6.1</PackageVersion>
-        <Title>MessageBox.Avalonia.Light</Title>
+        <PackageVersion>0.9.7.0</PackageVersion>
+        <Title>MessageBoxSlim.Avalonia</Title>
         <Authors>SirJson, Lary&lt;f98f96.gmail.com&gt;</Authors>
         <Description>A simpler MessageBox for AvaloniaUI</Description>
         <PackageProjectUrl>https://github.com/SirJson/MessageBox.Avalonia</PackageProjectUrl>
