@@ -25,7 +25,7 @@ The major differences are:
 
 I also expanded the Example Project to show the new API and different Styles.
 
-At the moment this is not yet on NuGet! It depends on how useful those changes are for other people.
+This version is not on NuGet yet. If that changes I will update the README.
 
 ## Example Usage
 
