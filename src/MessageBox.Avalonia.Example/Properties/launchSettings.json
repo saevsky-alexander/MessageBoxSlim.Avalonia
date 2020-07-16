@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "MessageBox.Avalonia.Example": {
+      "commandName": "Project",
+      "commandLineArgs": "--usertheme"
+    }
+  }
+}

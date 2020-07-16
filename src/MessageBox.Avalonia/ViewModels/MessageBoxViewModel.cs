@@ -70,7 +70,6 @@ namespace MessageBoxSlim.Avalonia.ViewModels
 
         public void ButtonClick(string parameter)
         {
-           
             window.UserResult =
                 (UserResult)
                 Enum.Parse(typeof(UserResult), parameter.Trim(), false);

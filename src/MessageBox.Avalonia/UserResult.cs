@@ -1,8 +1,7 @@
 using System;
 
-namespace MessageBoxSlim.Avalonia.Enums
+namespace MessageBoxSlim.Avalonia
 {
-    [Flags]
     public enum UserResult
     {
         Ok,

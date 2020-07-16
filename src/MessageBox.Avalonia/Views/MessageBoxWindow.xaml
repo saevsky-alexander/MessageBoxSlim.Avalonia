@@ -10,6 +10,7 @@
         WindowStartupLocation="{Binding Location}"
         MinHeight="100"
         CanResize="{Binding CanResize}"
+         Classes="MessageBox"
         Title="{Binding Title}">
     <Window.KeyBindings>
         <KeyBinding Gesture="Ctrl+C" Command="{Binding CopyToClipboard}" />
@@ -26,9 +27,6 @@
             <Setter Property="IsReadOnly" Value="True" />
             <Setter Property="ScrollViewer.VerticalScrollBarVisibility" Value="Auto" />
             <Setter Property="ScrollViewer.HorizontalScrollBarVisibility" Value="Disabled" />
-        </Style>
-        <Style Selector="TextBox.header">
-            <Setter Property="FontWeight" Value="Bold" />
         </Style>
         <Style Selector="Button">
             <Setter Property="Margin" Value="15 0 15 0" />
@@ -47,22 +45,22 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <!--Icon-->
-        <Image Grid.Row="0" Grid.Column="0" Margin="8" MaxHeight="50" MaxWidth="50" VerticalAlignment="Center"
+        <Image Classes="MessageBox" Grid.Row="0" Grid.Column="0" Margin="8" MaxHeight="50" MaxWidth="50" VerticalAlignment="Center"
                IsVisible="{Binding HasIcon}"
                Source="{Binding Icon}" />
-        <TextBox  Grid.Row="0" VerticalAlignment="Center" Margin="4,16,8,16" Grid.Column="1" Text="{Binding Message}" />
+        <TextBox Classes="MessageBox" Grid.Row="0" VerticalAlignment="Center" Margin="4,16,8,16" Grid.Column="1" Text="{Binding Message}" />
         <!--Buttons-->
         <StackPanel Orientation="Horizontal"  Margin="4,16,8,16" Grid.Row="1" Grid.ColumnSpan="2"
                     HorizontalAlignment="Right" VerticalAlignment="Center">
-            <Button Content="Ok" Command="{Binding ButtonClick}"
-                    CommandParameter="{Binding $self.Content}" IsVisible="{Binding OkButton}" />
-            <Button Content="Yes" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
-                    IsVisible="{Binding YesButton}" />
-            <Button Content="No" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
-                    IsVisible="{Binding NoButton}" />
-            <Button Content="Abort" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
-                    IsVisible="{Binding AbortButton}" />
-            <Button Content="Cancel" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
+            <Button Classes="MessageBox" Content="Ok" Command="{Binding ButtonClick}"
+                     CommandParameter="{Binding $self.Content}" IsVisible="{Binding OkButton}" />
+            <Button Classes="MessageBox" Content="Yes" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
+                     IsVisible="{Binding YesButton}" />
+            <Button Classes="MessageBox" Content="No" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
+                     IsVisible="{Binding NoButton}" />
+            <Button Classes="MessageBox" Content="Abort" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
+                     IsVisible="{Binding AbortButton}" />
+            <Button Classes="MessageBox" Content="Cancel" Command="{Binding ButtonClick}" CommandParameter="{Binding $self.Content}"
                     IsVisible="{Binding CancelButton}" />
         </StackPanel>
     </Grid>

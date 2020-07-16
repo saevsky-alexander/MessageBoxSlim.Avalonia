@@ -3,11 +3,10 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
-        x:Class="MessageBox.Avalonia.Example.MainWindow"
-        Title="MessageBox.Avalonia.Example">
+        x:Class="MessageBoxSlim.Avalonia.UserThemeExample.MainWindow"
+        Title="MessageBoxSlim.Avalonia.UserThemeExample">
     <Grid RowDefinitions="1*,2*,1*"  ColumnDefinitions="1*,1*,1*">
-        <TextBlock Grid.Row="0" Margin="8" Grid.Column="0" Grid.ColumnSpan="3" FontSize="24">Example: Basics</TextBlock>
+        <TextBlock Grid.Row="0" Margin="8" Grid.Column="0" Grid.ColumnSpan="3" FontSize="24">Example: User Theme</TextBlock>
         <Button Grid.Row="1" Grid.Column="1" Name="btnClick" Content="Start" />
     </Grid>
-   
 </Window>
