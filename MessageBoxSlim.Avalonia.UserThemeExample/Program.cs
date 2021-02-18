@@ -1,6 +1,5 @@
 ﻿
 using Avalonia;
-using Avalonia.Logging.Serilog;
 
 namespace MessageBoxSlim.Avalonia.UserThemeExample
 {
@@ -20,7 +19,7 @@ namespace MessageBoxSlim.Avalonia.UserThemeExample
         {
             return AppBuilder.Configure<App>()
                            .UsePlatformDetect()
-                           .LogToDebug();
+                           .LogToTrace();
         }
     }
 }

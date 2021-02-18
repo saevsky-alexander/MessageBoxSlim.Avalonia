@@ -1,5 +1,4 @@
 ﻿using Avalonia;
-using Avalonia.Logging.Serilog;
 
 namespace MessageBox.Avalonia.Example
 {
@@ -19,7 +18,7 @@ namespace MessageBox.Avalonia.Example
         {
             return AppBuilder.Configure<App>()
                 .UsePlatformDetect()
-                .LogToDebug();
+                .LogToTrace();
         }
     }
 }

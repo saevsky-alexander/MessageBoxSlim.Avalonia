@@ -15,10 +15,6 @@
     <Window.KeyBindings>
         <KeyBinding Gesture="Ctrl+C" Command="{Binding CopyToClipboard}" />
     </Window.KeyBindings>
-    <Design.DataContext>
-
-    </Design.DataContext>
-
     <Window.Styles>
         <Style Selector="TextBox">
             <Setter Property="BorderThickness" Value="0" />

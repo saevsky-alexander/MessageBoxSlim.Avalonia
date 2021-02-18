@@ -8,5 +8,7 @@ namespace MessageBoxSlim.Avalonia.Interfaces
     {
         Task<T> ShowDialogAsync(Window ownerWindow);
         Task<T> ShowAsync();
+
+        void Close();
     }
 }

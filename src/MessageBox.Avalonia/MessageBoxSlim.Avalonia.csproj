@@ -2,15 +2,16 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
-        <PackageVersion>0.9.8.0</PackageVersion>
-        <Title>MessageBoxSlim.Avalonia</Title>
+        <PackageVersion>0.9.9.0</PackageVersion>
+        <Title>MessageBoxSlim.Avalonia.2</Title>
         <Authors>SirJson, Lary&lt;f98f96.gmail.com&gt;</Authors>
         <Description>A simpler MessageBox for AvaloniaUI</Description>
-        <PackageProjectUrl>https://github.com/SirJson/MessageBox.Avalonia</PackageProjectUrl>
+        <PackageProjectUrl>https://github.com/emmauss/MessageBox.Avalonia</PackageProjectUrl>
         <PackageLicenseExpression>Apache-2.0</PackageLicenseExpression>
-        <RepositoryUrl>https://github.com/SirJson/MessageBox.Avalonia</RepositoryUrl>
+        <RepositoryUrl>https://github.com/emmauss/MessageBox.Avalonia</RepositoryUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageTags>Avalonia,MessageBox</PackageTags>
+        <PackageId>MessageBoxSlim.Avalonia.2</PackageId>
     </PropertyGroup>
     <ItemGroup>
         <AvaloniaResource Include="**\*.xaml">
@@ -26,8 +27,9 @@
         <Version>0.9.8</Version>
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="Avalonia" Version="0.9.11" />
-      <PackageReference Include="Avalonia.ReactiveUI" Version="0.9.11" />
+      <PackageReference Include="Avalonia" Version="0.10.0" />
+      <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
+      <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
     </ItemGroup>
 
 </Project>

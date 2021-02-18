@@ -7,6 +7,7 @@
         Title="MessageBoxSlim.Avalonia.UserThemeExample">
     <Grid RowDefinitions="1*,2*,1*"  ColumnDefinitions="1*,1*,1*">
         <TextBlock Grid.Row="0" Margin="8" Grid.Column="0" Grid.ColumnSpan="3" FontSize="24">Example: User Theme</TextBlock>
-        <Button Grid.Row="1" Grid.Column="1" Name="btnClick" Content="Start" />
+        <Button Grid.Row="1" Grid.Column="0" Name="btnClick" Content="Start" />
+        <Button Grid.Row="1" Grid.Column="1" Name="close" Content="Close" Click="Close_OnClick"/>
     </Grid>
 </Window>
