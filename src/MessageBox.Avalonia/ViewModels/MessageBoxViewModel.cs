@@ -9,6 +9,7 @@ using MessageBoxSlim.Avalonia.Views;
 
 using System;
 using System.Threading.Tasks;
+using System.Windows.Input;
 
 namespace MessageBoxSlim.Avalonia.ViewModels
 {
@@ -29,6 +30,14 @@ namespace MessageBoxSlim.Avalonia.ViewModels
 
             _dtoParams = @params;
             window = wnd;
+
+            ButtonClick = MiniCommand.Create<string>((string parameter) =>
+            {
+                window.UserResult =
+                    (UserResult)
+                    Enum.Parse(typeof(UserResult), parameter.Trim(), false);
+                window.Close();
+            });
         }
 
         private readonly MessageBoxWindow window;
@@ -67,12 +76,6 @@ namespace MessageBoxSlim.Avalonia.ViewModels
                 .SetTextAsync(Message);
         }
 
-        public void ButtonClick(string parameter)
-        {
-            window.UserResult =
-                (UserResult)
-                Enum.Parse(typeof(UserResult), parameter.Trim(), false);
-            window.Close();
-        }
+        public ICommand ButtonClick {get;}
     }
 }

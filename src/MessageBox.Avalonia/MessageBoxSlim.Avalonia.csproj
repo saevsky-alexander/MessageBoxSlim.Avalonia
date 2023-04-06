@@ -24,12 +24,12 @@
         <AssemblyName>MessageBoxSlim.Avalonia</AssemblyName>
         <Company>SirJson,SirJson, Lary&lt;f98f96.gmail.com&gt;</Company>
         <RepositoryType>git</RepositoryType>
-        <Version>0.9.8</Version>
+        <Version>11.0.0-preview6</Version>
     </PropertyGroup>
     <ItemGroup>
-      <PackageReference Include="Avalonia" Version="0.10.0" />
-      <PackageReference Include="Avalonia.Diagnostics" Version="0.10.0" />
-      <PackageReference Include="Avalonia.ReactiveUI" Version="0.10.0" />
+      <PackageReference Include="Avalonia" Version="11.0.0-preview6" />
+      <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0-preview6" />
+      <PackageReference Include="Avalonia.ReactiveUI" Version="11.0.0-preview6" />
     </ItemGroup>
 
 </Project>
