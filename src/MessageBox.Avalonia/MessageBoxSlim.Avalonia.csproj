@@ -12,7 +12,7 @@
         <RepositoryUrl>https://github.com/saevsky-alexander/MessageBoxSlim.Avalonia</RepositoryUrl>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
         <PackageTags>Avalonia,MessageBox</PackageTags>
-        <PackageId>MessageBoxSlim.Avalonia.2</PackageId>
+        <PackageId>MessageBoxSlim.Avalonia</PackageId>
     </PropertyGroup>
     <ItemGroup>
         <AvaloniaResource Include="**\*.xaml">
