@@ -29,6 +29,9 @@
             <Setter Property="MinHeight" Value="24" />
             <Setter Property="MinWidth" Value="75" />
         </Style>
+        <Style Selector="Path.MessageBox">
+            <Setter Property="Fill" Value="Blue"/>
+        </Style>
 
     </Window.Styles>
     <Grid>
@@ -41,9 +44,9 @@
             <RowDefinition Height="Auto" />
         </Grid.RowDefinitions>
         <!--Icon-->
-        <Image Classes="MessageBox" Grid.Row="0" Grid.Column="0" Margin="8" MaxHeight="50" MaxWidth="50" VerticalAlignment="Center"
+        <Path Classes="MessageBox" Grid.Row="0" Grid.Column="0" Margin="8" MaxHeight="50" MaxWidth="50" VerticalAlignment="Center"
                IsVisible="{Binding HasIcon}"
-               Source="{Binding Icon}" />
+               Data="{Binding Icon}" />
         <TextBox Classes="MessageBox" Grid.Row="0" VerticalAlignment="Center" Margin="4,16,8,16" Grid.Column="1" Text="{Binding Message}" />
         <!--Buttons-->
         <StackPanel Orientation="Horizontal"  Margin="4,16,8,16" Grid.Row="1" Grid.ColumnSpan="2"

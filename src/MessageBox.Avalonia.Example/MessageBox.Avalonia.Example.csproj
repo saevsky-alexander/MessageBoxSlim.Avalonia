@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net6.0</TargetFramework>
+    <TargetFramework>net7.0</TargetFramework>
     <IsPackable>false</IsPackable>
   </PropertyGroup>
   <ItemGroup>
@@ -21,7 +21,8 @@
     <PackageReference Include="Avalonia.Desktop" Version="11.0.0-preview6" />
     <PackageReference Include="Avalonia.Diagnostics" Version="11.0.0-preview6" />
     <PackageReference Include="Avalonia.Themes.Fluent" Version="11.0.0-preview6" /> 
-  </ItemGroup>
+    <PackageReference Include="Material.Icons" Version="1.1.35" />
+ </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MessageBox.Avalonia\MessageBoxSlim.Avalonia.csproj" />
   </ItemGroup>

@@ -2,7 +2,7 @@ using Avalonia;
 using Avalonia.Controls;
 using Avalonia.Input.Platform;
 using Avalonia.Media.Imaging;
-
+using Avalonia.Media;
 using MessageBoxSlim.Avalonia.DTO;
 using MessageBoxSlim.Avalonia.Enums;
 using MessageBoxSlim.Avalonia.Views;
@@ -10,6 +10,7 @@ using MessageBoxSlim.Avalonia.Views;
 using System;
 using System.Threading.Tasks;
 using System.Windows.Input;
+using Material.Icons;
 
 namespace MessageBoxSlim.Avalonia.ViewModels
 {
@@ -25,7 +26,7 @@ namespace MessageBoxSlim.Avalonia.ViewModels
             }
             if (@params.Icon == null)
             {
-                @params.Icon = BitmapFactory.Load("avares://MessageBoxSlim.Avalonia/Assets/noicon.ico");
+                @params.IconKind = MaterialIconKind.Information;
             }
 
             _dtoParams = @params;
@@ -62,7 +63,7 @@ namespace MessageBoxSlim.Avalonia.ViewModels
 
         public string Message => _dtoParams.ContentMessage;
 
-        public Bitmap Icon => _dtoParams.Icon;
+        public Geometry Icon => _dtoParams.Icon;
 
         public int? MaxWidth => _dtoParams.MaxWidth;
 
