@@ -3,8 +3,8 @@
     <PropertyGroup>
         <TargetFramework>netstandard2.0</TargetFramework>
         <LangVersion>9</LangVersion>
-        <PackageVersion>0.9.9.1</PackageVersion>
-        <Title>MessageBoxSlim.Avalonia.2</Title>
+        <PackageVersion>11.0.0-preview6</PackageVersion>
+        <Title>MessageBoxSlim.Avalonia</Title>
         <Authors>SirJson, Lary&lt;f98f96.gmail.com&gt;, A.Saevsky</Authors>
         <Description>A simpler MessageBox for AvaloniaUI</Description>
         <PackageProjectUrl>https://github.com/saevsky-alexander/MessageBoxSlim.Avalonia</PackageProjectUrl>
