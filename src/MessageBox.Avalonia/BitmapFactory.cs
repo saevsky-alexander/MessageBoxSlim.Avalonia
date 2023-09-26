@@ -10,18 +10,12 @@ namespace MessageBoxSlim.Avalonia
     {
         public static Bitmap Load(Uri uri)
         {
-            return new Bitmap(AvaloniaLocator
-                    .Current
-                    .GetService<IAssetLoader>()
-                    .Open(uri));
+            return new Bitmap(AssetLoader.Open(uri));
         }
 
         public static Bitmap Load(string uri)
         {
-            return new Bitmap(AvaloniaLocator
-                    .Current
-                    .GetService<IAssetLoader>()
-                    .Open(new Uri(uri)));
+            return new Bitmap(AssetLoader.Open(new Uri(uri)));
         }
     }
 }

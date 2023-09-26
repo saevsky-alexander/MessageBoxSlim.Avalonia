@@ -71,10 +71,7 @@ namespace MessageBoxSlim.Avalonia.ViewModels
 
         public async Task CopyToClipboard()
         {
-            await AvaloniaLocator
-                .Current
-                .GetService<IClipboard>()
-                .SetTextAsync(Message);
+            await TopLevel.GetTopLevel(window).Clipboard.SetTextAsync(Message);
         }
 
         public ICommand ButtonClick {get;}
